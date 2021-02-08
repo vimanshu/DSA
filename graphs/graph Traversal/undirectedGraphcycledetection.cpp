@@ -43,3 +43,11 @@ int main(){
   cout<<cycleDetect(graph,1,visited,-1);
   
 }
+/* input:
+5 4
+1 2
+1 5
+2 3
+2 4
+3 4
+*/
