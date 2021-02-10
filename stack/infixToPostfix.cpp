@@ -14,7 +14,7 @@ void infix_to_postfix(string &s){
       st.push(s[i]);
     }
     
-    else if(s[i]=='*' || s[i]=='/'){
+    else if(!st.empty() && st.top()!='+') && (!st.empty() && st.top()!='-')){
       
         while(!st.empty() && st.top()!='+') {
           //ask bhaiya
