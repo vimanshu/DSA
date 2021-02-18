@@ -62,3 +62,7 @@ int main()
     }
     return 0;
 }
+/* input:
+4                                                                                                                                                                                                                            
+e1 d d d
+*/
