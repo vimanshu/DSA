@@ -42,7 +42,11 @@ int main()
         cin>>s>>d;
         union_(s,d,parent,rank);
     }
-
+     cout<<"par"<<"\t"<<"rank";
+    cout<<endl;
+    for (int i = 0; i < parent.size(); i++) {
+        cout<<parent[i]<<"\t"<<rank[i]<<endl;
+    }
     // wap for finding the number of connected components
     int c=0;
     for(int x: parent){
