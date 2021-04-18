@@ -17,11 +17,11 @@ vector<int> string_match(string t, string pat,vector <int> &occurences){
     for (int i = 1; i < p_pow.size(); i++) {
         p_pow[i]=p_pow[i-1]*p%mod;
     }
-    vector<long long>  h(T+1,0);
+    vector<long long>  h(T+1,0); // hash values of prefix of the text 
     for(int i=0; i<T;i++){
         h[i+1]=h[i]+(t[i]-'a'+1)*p_pow[i]%mod;
     }
-    ll h_p=0;
+    ll h_p=0; // hash of pattern
     for(int i=0; i<P;i++){
         h_p+=(pat[i]-'a'+1)*p_pow[i]%mod;
     }
@@ -37,7 +37,7 @@ vector<int> string_match(string t, string pat,vector <int> &occurences){
 }
 int main()
 {
-    string t,p; // p->pattern, text
+    string t,p; //  input:  t->text, p->pattern
     cin>>t>>p;
     vector<int> occurences;
     string_match(t,p,occurences);
@@ -48,3 +48,4 @@ int main()
 
     return 0;
 }
+ 
