@@ -1,4 +1,5 @@
 // making the rolling hash function
+// converts the lower case char a-to-z with 1-26
 #define ll long long int
 #include <bits/stdc++.h>
 using namespace std;
